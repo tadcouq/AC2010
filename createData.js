@@ -1,17 +1,15 @@
-const fs = require('fs');
+import fs from 'fs';
 const filename = './dataStudent.json';
 
-const minStrLen = 10;
-const maxStrLen = 20;
+const minStrLen = 8;
+const maxStrLen = 8;
 
-const maxElement = 100000;
+const maxElement = 9000;
 let k = 1;
-let aSV = [
-  {id: k.toString().padStart(8,'0'), name: makeRdnStr(makeRdnFloat(minStrLen, maxStrLen)), cpa: makeRdnFloat(0,4).toFixed(2)},
-];
+let aSV = [ ];
 
 for (let i = 1; i < maxElement; i++) {
-  let sv = {id: (i+1).toString().padStart(8,'0'), name: makeRdnStr(makeRdnFloat(minStrLen, maxStrLen)), cpa: makeRdnFloat(0,4).toFixed(2)};
+  let sv = {id: (20000000+(Math.floor(Math.random()*(24-19)+19))*10000+(i+1)), name: makeRdnStr(makeRdnFloat(minStrLen, maxStrLen)), cpa: makeRdnFloat(0,4).toFixed(2)};
   aSV.push(sv);
 }
 
