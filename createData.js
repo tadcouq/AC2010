@@ -13,6 +13,8 @@ for (let i = 1; i < maxElement; i++) {
   aSV.push(sv);
 }
 
+aSV.sort((a, b) => a.id - b.id);
+
 const jsonData = (JSON.stringify(aSV));
 fs.writeFile(filename, jsonData, 'utf-8', (err) => console.log(err? err:'The file was saved!'));
 
