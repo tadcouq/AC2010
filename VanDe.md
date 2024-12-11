@@ -1,0 +1,2 @@
+# Bất kỳ vấn đề nào cần hội ý note tại đây
+Quốc Đạt: giờ câu 2 find yêu cầu có cảnh cáo, nếu giờ câu 6 mới bắt đầu quét cảnh cáo thì logic giữa phần này phần kia dễ chồng lấn vớ vẩn quá, hay giờ đẩy xác định cpa sang ngay từ lúc createData đi, để đúng logic như vậy câu 3 cũng sẽ có thêm 1 function sau khi modify cpa thì cũng kiểm tra sửa cả cảnh cáo trong đó nữa.
