@@ -18,7 +18,7 @@ Thông tin của sinh viên bao gồm:
 -	mức cảnh cáo: 1/2/3
 Cho phép thực hiện một lệnh hoặc một chuỗi lệnh trên dữ liệu sinh viên. Các lệnh cho phép bao gồm:
 1.	list: in ra danh sách sinh viên đang học, theo thứ tự lưu trữ, chỉ in mssv và tên (1đ)
-2.	find <mssv>: tìm sinh viên có mssv. Ví dụ: find 20230108 là tìm sinh viên có mssv 20230108. Trả về đối tượng sinh viên nếu tìm thấy (in ra màn hình <mssv> “<hoten>” <cpa> <canhcao>, trả về undefine nếu không tìm thấy (1đ)
+2.	find <mssv>: tìm sinh viên có mssv. Ví dụ: find 20230108 là tìm sinh viên có mssv 20230108. Trả về đối tượng sinh viên nếu tìm thấy (in ra màn hình <mssv> “<hoten>” <cpa> <canhcao>, trả về undefine nếu không tìm thấy) (1đ)
 3.	modify cpa <mssv> <cpa_mới>: thay đổi cpa của sinh viên (1đ)
 4.	findtop n: tìm n sinh vien có cpa cao nhất, trả về mỗi mssv trên một dòng, mssv có cpa cao nhất đứng trước, n là số nguyên >=1 (1đ)
 5.	findbottom n: tìm n sinh viên có cpa thấp nhất, trả về mỗi mssv trên một dòng, mssv có cpa thấp nhất đứng trước, n là số nguyên >=1 (1đ)
@@ -30,9 +30,11 @@ Báo cáo: rõ ràng, cẩn thận, đầy đủ yêu câu (1 điểm)
 -	Có sử dụng async cho các thao tác chiếm nhiều tài nguyên:  +1đ
 
 ## Cấu trúc hoạt động
-Toàn bộ code sẽ được hoàn thiện dưới dạng module hoá, mỗi câu ứng với mỗi lệnh sẽ được tách ra thành các file .js nhỏ, tất cả được đồng bộ call trên 1 file index.js tổng hợp và chạy các chức năng.
+Toàn bộ code sẽ được hoàn thiện dưới dạng module hoá, mỗi câu ứng với mỗi lệnh sẽ được tách ra thành các file .js nhỏ, tất cả được đồng bộ call trên 1 file main.js tổng hợp và chạy các chức năng.
 Các thao tác nhập data sẽ sử dụng prompt-sync.
 Data sinh viên sẽ được tạo thành 1 file .json bằng cách dùng makeRdnStr và sẽ tách biệt thành 1 file js hoàn toàn riêng biệt, không nằm trong index.js.
 
 ## Sử dụng
+Setup: `npm i`
 Để khởi động chương trình: `node index.js`
+
