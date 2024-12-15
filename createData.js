@@ -9,11 +9,18 @@ let k = 1;
 let aSV = [ ];
 
 for (let i = 1; i < maxElement; i++) {
-  let sv = {id: (20000000+(Math.floor(Math.random()*(24-19)+19))*10000+(i+1)), name: makeRdnStr(makeRdnFloat(minStrLen, maxStrLen)), cpa: makeRdnFloat(0,4).toFixed(2)};
+  let cpa = makeRdnFloat(0,4).toFixed(2);
+  let canhcao = determineRisk(cpa);
+  let sv = {
+    mssv: (20000000+(Math.floor(Math.random()*(24-19)+19))*10000+(i+1)), 
+    name: makeRdnStr(makeRdnFloat(minStrLen, maxStrLen)), 
+    cpa: cpa,
+    canhcao: canhcao
+  };
   aSV.push(sv);
-}
+};
 
-aSV.sort((a, b) => a.id - b.id);
+aSV.sort((a, b) => a.mssv - b.mssv);
 
 const jsonData = (JSON.stringify(aSV));
 fs.writeFile(filename, jsonData, 'utf-8', (err) => console.log(err? err:'The file was saved!'));
@@ -34,6 +41,13 @@ function makeRdnStr(length) {
 
 function makeRdnFloat(min, max) {
   return (Math.random() * (max - min) ) + min;
+}
+
+function determineRisk(cpa) {
+  if (cpa <= 0.5) return 3;
+  if (0.5 < cpa && cpa <= 1.0) return 2;
+  if (1.0 < cpa && cpa <= 1.5) return 1;
+  return 0;
 }
 
 // For debug
