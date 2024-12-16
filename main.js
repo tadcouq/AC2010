@@ -77,10 +77,10 @@ while (!exit){
                             const suspendedCount = await countSuspendedStudents(filename, currentMonthYear);
     
                             console.log(`Số lượng sinh viên bị đình chỉ: ${suspendedCount}`);
-                        } catch (err) {
+                        } 
+                        catch (err) {
                             console.error("Đã xảy ra lỗi:", err.message);
                         }
-                        prompt("Nhấn phím Enter để tiếp tục...");
                     })();
                     break;
             default:
