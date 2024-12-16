@@ -1,5 +1,5 @@
-# AC2010 - Nhóm 5, AC2050 - Nhóm 4
-## Mã lớp 155460, 155470
+# AC2010 - Nhóm 5
+## Mã lớp 155460
 GVHD: Nguyễn Việt Tùng
 
 ## Thành viên:
