@@ -1,5 +1,5 @@
-# AC2010 - Nhóm 5, AC2050 - Nhóm 4
-## Mã lớp 155460, 155470
+# AC2010 - Nhóm 5
+## Mã lớp 155460
 GVHD: Nguyễn Việt Tùng
 
 ## Thành viên:
@@ -7,7 +7,6 @@ GVHD: Nguyễn Việt Tùng
 2. Trần Đình Tùng 20231646
 3. Nguyễn Ngọc Hải 20231588
 4. Trịnh Gia Hưng 20239646
-5. Nguyễn Xuân Đại 20231568 (AC2050)
 
 ## Đề 2
 Cho bài toán quản lý kết quả học tập của sinh viên ĐHBK Hà Nội, giới hạn chỉ xét trong 01 kì (kì 20232)
